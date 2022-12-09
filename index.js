@@ -11,7 +11,10 @@ app.get('/', (req, res) => {
     res.render('home')
 })
 app.get('*', (req, res) => {
-    res.status(404).send('<h1>404 page</h1>')
+    res.render('error404')
+})
+app.get('/', (req,res) => {
+    res.render('places/index')
 })
 
 const PORT = process.env.PORT || 8080

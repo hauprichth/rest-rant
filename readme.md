@@ -2,6 +2,9 @@
 
 REST-Rant is an app where users can review restaurants.
 
+Color Palette 
+541388, D90368, F1E9DA, 2E294E, FFD400
+
 | Method | Path | Purpose |
 | --- | --- | --- |
 | GET | / | Home Page |
