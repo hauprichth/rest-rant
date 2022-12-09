@@ -14,4 +14,6 @@ app.get('*', (req, res) => {
     res.status(404).send('<h1>404 page</h1>')
 })
 
-app.listen(process.env.PORT)
+const PORT = process.env.PORT || 8080
+
+app.listen(PORT, console.log(`listening on port ${PORT}`))
