@@ -29,6 +29,10 @@ router.get('/new', (req, res) => {
     res.render('places/new')
 })
 
+router.post('/', (req,res) => {
+    res.send('POST/places')
+})
+
 //| POST | /places | Create new place |
 //| GET | /places/:id | Details about a particular place |
 //| PUT | /places/:id | Update a particular place |
