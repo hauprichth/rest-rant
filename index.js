@@ -14,9 +14,6 @@ app.get('/', (req, res) => {
 app.get('*', (req, res) => {
     res.render('error404')
 })
-app.get('/', (req,res) => {
-    res.render('places/index')
-})
 
 const PORT = process.env.PORT || 8080
 
