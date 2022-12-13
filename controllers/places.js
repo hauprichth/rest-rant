@@ -24,7 +24,9 @@ router.post('/', (req,res) => {
     }
     places.push(req.body)
     res.redirect('/places')
-    router.get('/:id', (req, res) =>{
+})
+ // access show page 
+ router.get('/:id', (req, res) => {
         let id = Number(req.params.id)
         if (isNaN(id)) {
             res.render('error404')
@@ -33,12 +35,13 @@ router.post('/', (req,res) => {
         res.render('error404')
         }
         else {
-        res.render('places/show', {place: places[id]})
+        res.render('places/show', { place: places[id] })
         }
     })
-})
+ 
 
-//| GET | /places/:id | Details about a particular place |
+
+
 //| PUT | /places/:id | Update a particular place |
 //| GET | /places/:id/edit | Form page for editing an existing place |
 //| Delete | /places/:id | Delete a particular place

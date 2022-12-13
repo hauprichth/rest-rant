@@ -1,6 +1,6 @@
 h1 {
     text-align: center;
-    color: cornflowerblue;
+    color: #D90368;
 }
 img {
     height: 75%;
@@ -11,7 +11,7 @@ img {
     
 }
 nav {
-    background-color: cornflowerblue;
+    background-color: #ffd400;
     padding: 10px;
 }
 
@@ -26,22 +26,32 @@ nav li {
 }
 
 nav a {
-    color: white;
+    color: #D90368;
     font-size: 1.5em;
 }
 
 nav a:hover {
-    color: pink;
+    color: #f1e9da;
     text-decoration: none;
 }
 body {
-    background-color: lightblue;
+    background-color: #541388;
     text-align: center;
   }
   
   main {
-    margin-right: 20px;
-    margin-left: 20px;
-    background-color: white;
+    margin-right: 25px;
+    margin-left: 25px;
+    background-color: #f1e9da;
   }
   
+  a {
+    color: #D90368;
+  }
+  a:hover {
+    color: #f1e9da;
+  }
+  .comrat {
+    color: #5e50b9
+  }
+
