@@ -25,25 +25,37 @@ router.post('/', (req,res) => {
     places.push(req.body)
     res.redirect('/places')
 })
- // access show page 
- router.get('/:id', (req, res) => {
-        let id = Number(req.params.id)
-        if (isNaN(id)) {
-            res.render('error404')
-        }
-        else if  (!places[id]) {
-        res.render('error404')
-        }
-        else {
-        res.render('places/show', { place: places[id] })
-        }
-    })
- 
+// access edit page 
+router.get('/:id/edit', (req, res) => {
+       let id = Number(req.params.id)
+       if (isNaN(id)) {
+           res.render('error404')
+       }
+       else if  (!places[id]) {
+       res.render('error404')
+       }
+       else {
+       res.render('places/edit', { place: places[id] })
+       }
+   })
+   // access show page 
+   router.get('/:id/', (req, res) => {
+          let id = Number(req.params.id)
+          if (isNaN(id)) {
+              res.render('error404')
+          }
+          else if  (!places[id]) {
+          res.render('error404')
+          }
+          else {
+          res.render('places/show', { id: id, place: places[id] })
+          }
+      })
+   
 
 
 
 //| PUT | /places/:id | Update a particular place |
-//| GET | /places/:id/edit | Form page for editing an existing place |
 //| Delete | /places/:id | Delete a particular place
 //| POST | /places/:id/rant | Create a rant (comment) about a particular place |
 //| Delete | /places/:id/rant/:rantId | Delete a rant (comment) about a particular place |

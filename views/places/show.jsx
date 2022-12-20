@@ -14,6 +14,14 @@ function show (data) {
                 <h2 className='comrat'>Comments</h2>
                 <p>No comments yet!</p>
             </div>
+            <a href={`/places/${data.id}/edit`} className="btn btn-warning">
+              Edit
+            </a>
+            <form method="POST" action={`/places/${data.id}?_method=DELETE`}>
+              <button type="submit" className="btn btn-danger">
+                Delete
+              </button>
+            </form>
           </main>
         </Def>
     )
