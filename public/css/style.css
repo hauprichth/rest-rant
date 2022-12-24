@@ -2,12 +2,17 @@ h1 {
   text-align: center;
   color: #d90368;
 }
-img {
-  height: 75%;
-  width: 50%;
+.homeImg {
+  height: 15;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+ 
+}
+.placesImg{
+  display: block;
+  width: 800px;
+  max-width: 60%;
+  margin: auto;
 }
 nav {
   background-color: #ffd400;
@@ -39,8 +44,8 @@ body {
 }
 
 main {
-  margin-right: 25px;
-  margin-left: 25px;
+  margin-right: 20px;
+  margin-left: 20px;
   background-color: #f1e9da;
 }
 
